@@ -1,8 +1,9 @@
- workflows:
-     welcome:
-         jobs:
-             - welcome/run
-             - print_hello
-             - print_world
-         requires:
-                   - print_hello
+--- 
+workflows: 
+  welcome: 
+    jobs: 
+      - welcome/run
+      - print_hello
+      - print_world
+    requires: 
+      - print_hello

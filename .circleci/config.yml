@@ -1,4 +1,17 @@
 --- 
+jobs: 
+  build: 
+    docker: 
+      - 
+        auth: 
+          password: $DOCKERHUB_PASSWORD
+          username: mydockerhub-user
+        image: "cimg/node:14.10.1"
+    steps: 
+      - checkout
+      - 
+        run: "echo \"hello world\""
+version: 2.1
 workflows: 
   welcome: 
     jobs: 

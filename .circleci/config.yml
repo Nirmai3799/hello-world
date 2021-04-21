@@ -4,5 +4,5 @@
              - welcome/run
              - print_hello
              - print_world
-               requires:
+         requires:
                    - print_hello
